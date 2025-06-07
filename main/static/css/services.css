@@ -1,0 +1,166 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F2F2F2; /* Светло-серый фон */
+    color: #333333; /* Темно-серый текст */
+}
+
+/* Шапка сайта */
+header {
+    background-color: #4B0082; /* Темно-фиолетовый */
+    color: #FFFFFF;
+    padding: 20px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #D8BFD8; /* Лаванда */
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #D8BFD8; /* Лаванда */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    color: #003366; /* Темно-синий */
+}
+
+/* Основной блок (services-hero) */
+.services-hero {
+    background-color: #D8BFD8; /* Лаванда */
+    text-align: center;
+    padding: 50px 0;
+}
+
+.services-hero h1 {
+    font-size: 36px;
+    color: #4B0082; /* Темно-фиолетовый */
+}
+
+.services-hero p {
+    font-size: 18px;
+    color: #333333;
+    margin-top: 20px;
+}
+
+/* Список услуг */
+.services-list {
+    padding: 50px 0;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.services-list h2 {
+    font-size: 28px;
+    color: #4B0082; /* Темно-фиолетовый */
+    margin-bottom: 20px;
+}
+
+.service-item {
+    display: inline-block;
+    width: 22%;
+    margin: 0 1.5%;
+    padding: 20px;
+    text-align: center;
+    background-color: #F8F8F8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.service-item h3 {
+    font-size: 20px;
+    color: #4B0082; /* Темно-фиолетовый */
+    margin-top: 15px;
+}
+
+.service-item p {
+    font-size: 14px;
+    color: #666666;
+    margin-top: 10px;
+}
+
+.service-item .cta-button {
+    display: inline-block;
+    background-color: #FFD700; /* Золотой */
+    color: #4B0082; /* Темно-фиолетовый */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.service-item .cta-button:hover {
+    background-color: #4B0082;
+    color: #FFD700;
+}
+
+/* Подвал сайта */
+footer {
+    background-color: #4B0082; /* Темно-фиолетовый */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #D8BFD8; /* Лаванда */
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer ul li a:hover {
+    color: #FFD700; /* Золотой */
+}

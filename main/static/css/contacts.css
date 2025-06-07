@@ -1,0 +1,179 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F2F2F2; /* Светло-серый фон */
+    color: #333333; /* Темно-серый текст */
+}
+
+/* Шапка сайта */
+header {
+    background-color: #4B0082; /* Темно-фиолетовый */
+    color: #FFFFFF;
+    padding: 20px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #D8BFD8; /* Лаванда */
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #D8BFD8; /* Лаванда */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    color: #003366; /* Темно-синий */
+}
+
+/* Основной блок (contacts-hero) */
+.contacts-hero {
+    background-color: #D8BFD8; /* Лаванда */
+    text-align: center;
+    padding: 50px 0;
+}
+
+.contacts-hero h1 {
+    font-size: 36px;
+    color: #4B0082; /* Темно-фиолетовый */
+}
+
+.contacts-hero p {
+    font-size: 18px;
+    color: #333333;
+    margin-top: 20px;
+}
+
+/* Контактная информация */
+.contacts-info {
+    padding: 50px 0;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.contacts-info h2 {
+    font-size: 28px;
+    color: #4B0082; /* Темно-фиолетовый */
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    font-size: 16px;
+    color: #333333;
+}
+
+/* Форма обратной связи */
+.contact-form {
+    padding: 50px 0;
+    background-color: #FFFFFF;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-form label {
+    font-size: 16px;
+    color: #4B0082; /* Темно-фиолетовый */
+}
+
+.contact-form input, .contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+}
+
+.contact-form button.cta-button {
+    background-color: #FFD700; /* Золотой */
+    color: #4B0082; /* Темно-фиолетовый */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact-form button.cta-button:hover {
+    background-color: #4B0082;
+    color: #FFD700;
+}
+
+/* Карта */
+.map {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.map iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: 0;
+}
+
+/* Подвал сайта */
+footer {
+    background-color: #4B0082; /* Темно-фиолетовый */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #D8BFD8; /* Лаванда */
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer ul li a:hover {
+    color: #FFD700; /* Золотой */
+}
