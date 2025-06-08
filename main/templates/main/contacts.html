@@ -1,0 +1,74 @@
+{% extends 'main/base.html' %}
+{% block title %}
+    Контакты
+{% endblock %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/contacts.css' %}" >
+{% endblock %}
+{% block content %}
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <a href="{% url 'main' %}" class="logo">
+                <img src="{% static 'img/logo.png' %}" alt="Логотип компании">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'main' %}">Главная</a></li>                    
+                    <li><a href="{% url 'services' %}">Услуги</a></li>
+                    <li><a href="{% url 'portfolio' %}">Портфолио</a></li>
+                    <li><a href="{% url 'about' %}">О нас</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной блок -->
+    <main>
+        <section class="contacts-hero">
+            <div class="container">
+                <h1>Контакты</h1>
+                <p>Свяжитесь с нами для консультации или заказа мероприятия.</p>
+            </div>
+        </section>
+
+        <section class="contacts-info">
+            <div class="container">
+                <h2>Наши координаты</h2>
+                <div class="contact-details">
+                    <p><strong>Адрес:</strong> Москва, ул. Примерная, 15</p>
+                    <p><strong>Телефон:</strong> +7 123 456 78 90</p>
+                    <p><strong>Email:</strong> info@example.com</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <div class="container">
+                <h2>Форма обратной связи</h2>
+                <form action="#" method="POST">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" placeholder="Ваше сообщение" required></textarea>
+
+                    <button type="submit" class="cta-button">Отправить</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="map">
+            <div class="container">
+                <h2>Наша локация</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+{% endblock %}

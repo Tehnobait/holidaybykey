@@ -1,0 +1,71 @@
+{% extends 'main/base.html' %}
+{% block title %}
+    Главная страница
+{% endblock %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" >
+{% endblock %}
+{% block content %}
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <a href="{% url 'main' %}" class="logo">
+                <img src="{% static 'img/logo.png' %}" alt="Логотип компании">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'portfolio' %}">Портфолио</a></li>
+                    <li><a href="{% url 'services' %}">Услуги</a></li>
+                    <li><a href="{% url 'contacts' %}">Контакты</a></li>
+                    <li><a href="{% url 'about' %}">О нас</a></li>
+                </ul>
+            </nav>
+            <a href="contacts.html" class="cta-button">Связаться с нами</a>
+        </div>
+    </header>
+
+    <!-- Основной блок -->
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Добро пожаловать в агентство по организации мероприятий под ключ</h1>
+                <p>Мы создаем уникальные события, которые оставляют незабываемые впечатления.</p>
+                <a href="services.html" class="cta-button">Узнать больше</a>
+            </div>
+        </section>
+
+        <!-- Преимущества -->
+        <section  class="benefits">
+            <div class="container">
+                <h2>Наши преимущества</h2>
+                <div class="benefit-item">
+                    <h3>Надежность</h3>
+                    <p>Мы гарантируем высокий уровень организации и соблюдение сроков.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Креативность</h3>
+                    <p>Каждое мероприятие уникально и соответствует вашим пожеланиям.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Прозрачность</h3>
+                    <p>Все этапы работы четко согласуются с вами, без скрытых платежей.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Презентация слайдера -->
+        <section class="slider">
+            <div class="container">
+                <h2>Наши работы</h2>
+                <div class="slider-images">
+                    <img src="" alt="Мероприятие 1">
+                    <img src="" alt="Мероприятие 2">
+                    <img src="" alt="Мероприятие 3">
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}

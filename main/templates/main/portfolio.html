@@ -1,0 +1,62 @@
+{% extends 'main/base.html' %}
+{% block title %}
+    Портфолио
+{% endblock %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/portfolio.css' %}" >
+{% endblock %}
+{% block content %}
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <a href="{% url 'main' %}" class="logo">
+                <img src="{% static 'img/logo.png' %}" alt="Логотип компании">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'main' %}">Главная</a></li>
+                    <li><a href="{% url 'services' %}">Услуги</a></li>
+                    <li><a href="{% url 'contacts' %}">Контакты</a></li>
+                    <li><a href="{% url 'about' %}">О нас</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной блок -->
+    <main>
+        <section class="portfolio-hero">
+            <div class="container">
+                <h1>Наши проекты</h1>
+                <p>Посмотрите, как мы организуем успешные мероприятия для разных клиентов.</p>
+            </div>
+        </section>
+
+        <section class="portfolio-gallery">
+            <div class="container">
+                <h2>Галерея наших мероприятий</h2>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="event1.jpg" alt="Мероприятие 1">
+                        <h3>Корпоративная конференция</h3>
+                        <p>Описание проекта и особенности мероприятия.</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="event2.jpg" alt="Мероприятие 2">
+                        <h3>Свадебная церемония</h3>
+                        <p>Индивидуальный подход и креативное оформление.</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="event3.jpg" alt="Мероприятие 3">
+                        <h3>Маркетинговая акция</h3>
+                        <p>Уникальные решения для продвижения бренда.</p>
+                    </div>
+                </div>
+                <a href="services.html" class="cta-button">Заказать мероприятие</a>
+            </div>
+        </section>
+    </main>
+{% endblock %}

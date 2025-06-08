@@ -1,0 +1,68 @@
+{% extends 'main/base.html' %}
+{% block title %}
+    Контакты
+{% endblock %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/services.css' %}" >
+{% endblock %}
+{% block content %}
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <a href="{% url 'main' %}" class="logo">
+                <img src="{% static 'img/logo.png' %}" alt="Логотип компании">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'main' %}">Главная</a></li>
+                    <li><a href="{% url 'portfolio' %}">Портфолио</a></li>
+                    <li><a href="{% url 'contacts' %}">Контакты</a></li>
+                    <li><a href="{% url 'about' %}">О нас</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной блок -->
+    <main>
+        <section class="services-hero">
+            <div class="container">
+                <h1>Наши услуги</h1>
+                <p>Мы предлагаем широкий спектр услуг по организации мероприятий, которые помогут вам создать уникальное событие.</p>
+            </div>
+        </section>
+
+        <section class="services-list">
+            <div class="container">
+                <h2>Наши основные услуги</h2>
+                <div class="service-item">
+                    <img src="corporate-event.jpg" alt="Корпоративные мероприятия">
+                    <h3>Корпоративные мероприятия</h3>
+                    <p>Мы организуем бизнес-мероприятия, конференции, семинары и тренинги для компаний любого масштаба.</p>
+                    <a href="corporate-events.html" class="cta-button">Подробнее</a>
+                </div>
+                <div class="service-item">
+                    <img src="marketing-event.jpg" alt="Маркетинговые мероприятия">
+                    <h3>Маркетинговые мероприятия</h3>
+                    <p>Помогаем провести презентации, промо-акции и рекламные мероприятия для увеличения узнаваемости вашего бренда.</p>
+                    <a href="marketing-events.html" class="cta-button">Подробнее</a>
+                </div>
+                <div class="service-item">
+                    <img src="team-building.jpg" alt="Тимбилдинги">
+                    <h3>Тимбилдинги</h3>
+                    <p>Организация активных и интересных тимбилдингов, которые укрепляют командный дух и улучшают взаимодействие сотрудников.</p>
+                    <a href="team-buildings.html" class="cta-button">Подробнее</a>
+                </div>
+                <div class="service-item">
+                    <img src="custom-event.jpg" alt="Индивидуальные мероприятия">
+                    <h3>Индивидуальные мероприятия</h3>
+                    <p>Мы создаем персонализированные мероприятия под ключ, такие как свадьбы, юбилеи, частные вечеринки и многое другое.</p>
+                    <a href="individual-events.html" class="cta-button">Подробнее</a>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}
