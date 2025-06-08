@@ -1,0 +1,52 @@
+{% extends 'main/base.html' %}
+{% block title %}
+    Корпоративные мероприятия
+{% endblock %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/corporate-events.html' %}" >
+{% endblock %}
+{% block content %}
+<body>
+
+    <!-- Навигация -->
+    <nav>
+        <ul>
+            <li><a href="{% url 'main' %}">Главная</a></li>
+            <li><a href="{% url 'services' %}">Услуги</a></li>
+            <li><a href="{% url 'corporate_events' %}">Корпоративные мероприятия</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Корпоративные мероприятия</h1>
+
+        <section>
+            <h2>Организация корпоративов и встреч</h2>
+            <p>
+                Мы предлагаем комплексную организацию корпоративных мероприятий. Наши специалисты обеспечат подготовку и проведение
+                мероприятий любой сложности: от тимбилдингов до масштабных корпоративных праздников. Мы заботимся о каждой детали,
+                чтобы создать атмосферу для эффективного общения и укрепления командных связей.
+            </p>
+        </section>
+
+        <section>
+            <h2>Наши услуги</h2>
+            <ul>
+                <li>Разработка концепции мероприятия</li>
+                <li>Организация мероприятий под ключ</li>
+                <li>Координация с поставщиками</li>
+                <li>Проведение мастер-классов и тренингов</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Примеры наших корпоративных мероприятий</h2>
+            <div class="events-gallery">
+                <img src="{% static 'img/corporate-event1.jpg' %}" alt="Корпоратив 1">
+                <img src="{% static 'img/corporate-event2.jpg' %}" alt="Корпоратив 2">
+                <img src="{% static 'img/corporate-event3.jpg' %}" alt="Корпоратив 3">
+            </div>
+        </section>
+    </div>
+{% endblock %}

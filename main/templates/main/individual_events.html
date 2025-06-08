@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Индивидуальные мероприятия</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <a href="{% url 'home' %}" class="logo">Логотип</a>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'services' %}">Услуги</a></li>
+                    <li><a href="{% url 'portfolio' %}">Портфолио</a></li>
+                    <li><a href="{% url 'contacts' %}">Контакты</a></li>
+                    <li><a href="{% url 'about' %}">О нас</a></li>
+                    <li><a href="{% url 'news' %}">Новости</a></li>
+                    <li><a href="{% url 'partners' %}">Партнеры</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Страница индивидуальных мероприятий -->
+    <main>
+        <section class="individual-events">
+            <div class="container">
+                <h1>Индивидуальные мероприятия</h1>
+                <div class="events-description">
+                    <p>
+                        Мы создаем уникальные индивидуальные мероприятия, которые идеально подходят для ваших нужд. Независимо от того,
+                        хотите ли вы организовать юбилей, свадьбу или важное личное событие, мы подходим к каждому мероприятию с креативом и вниманием к деталям.
+                    </p>
+                </div>
+                <div class="service-list">
+                    <h2>Что мы предлагаем:</h2>
+                    <ul>
+                        <li>Разработка уникальной концепции мероприятия</li>
+                        <li>Персонализированные предложения по оформлению</li>
+                        <li>Продажа и аренда оборудования для событий</li>
+                        <li>Организация питания и сервиса</li>
+                        <li>Подбор места проведения и координация с поставщиками</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Примеры индивидуальных мероприятий -->
+        <section class="events-gallery">
+            <div class="container">
+                <h2>Наши примеры</h2>
+                <div class="gallery">
+                    <img src="{% static 'img/individual-event1.jpg' %}" alt="Индивидуальное мероприятие 1">
+                    <img src="{% static 'img/individual-event2.jpg' %}" alt="Индивидуальное мероприятие 2">
+                    <img src="{% static 'img/individual-event3.jpg' %}" alt="Индивидуальное мероприятие 3">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Агентство по организации мероприятий. Все права защищены.</p>
+            <ul>
+                <li><a href="{% url 'privacy-policy' %}">Политика конфиденциальности</a></li>
+                <li><a href="{% url 'terms-of-use' %}">Условия использования</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
